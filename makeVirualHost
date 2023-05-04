@@ -1,0 +1,29 @@
+This is the path where we paste the below code:-
+E:\server\apache\conf\extra\httpd-xampp.conf
+
+This is the code:-
+<VirtualHost *:80>
+    DocumentRoot "E:/server/htdocs/LeadGeneration/public"
+    DocumentRoot "E:/server/htdocs/saas/public"
+    ServerName leadgeneration.test.com
+    ServerAlias leadgeneration.test.com
+</VirtualHost>
+<VirtualHost *:443>
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot "E:/server/htdocs/LeadGeneration/public"
+    ServerName leadgeneration.test.com
+    SSLEngine on
+    SSLCertificateFile "crt/leadgeneration.test.com/server.crt"
+    SSLCertificateKeyFile "crt/leadgeneration.test.com/server.key"
+ </VirtualHost>
+ 
+ 
+ 
+ 
+ 
+ 
+ After this Open the below path to set the path in window files:-
+C:\Windows\System32\drivers\etc\hosts (This is the path and open the path and paste the below code in hosts file)
+127.0.0.1       leadgeneration.test.com 
+
+(leadgeneration.test.com this path is same to the path which we paste in virtualhost in above code)
